@@ -1,0 +1,385 @@
+<style>
+	/*вот так ставятся комментарии внутри style :)*/
+	.header{
+		background: lightgray;
+		width: 100%;
+		height: 48PX;
+		border: 2px black solid	;
+	}
+	.charts-conatiner{
+		background: ;
+		width: 700px;
+		height: 720px;
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header-center{
+		background: ;
+		width: 700px;
+		height: 48px;
+		
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+	.charts-sort{
+		background: ;
+		width: 700px;
+		height: 48px;
+		
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:2px ;
+	}
+	.charts-up{
+		background: rgb(0,134,255);
+		background: linear-gradient(90deg, rgba(0,134,255,1) 5%, rgba(9,32,121,1) 58%, rgba(0,6,36,1) 87%);
+		width: 700px;
+		height: 80px;
+		border: 1px black solid;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:5px ;
+		border-radius: 7px;
+		display: flex;
+	}
+	.charts-new{
+		background: rgb(104,255,0);
+		background: linear-gradient(90deg, rgba(104,255,0,1) 5%, rgba(9,121,67,1) 58%, rgba(36,0,4,1) 87%);
+		width: 700px;
+		height: 80px;
+		border: 1px black solid;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom:5px ;
+		border-radius: 7px;
+		margin-top: 3px;
+		display: flex;
+	}
+	.charts-down{
+		background: rgb(255,0,0);
+		background: linear-gradient(90deg, rgba(255,0,0,1) 5%, rgba(121,9,39,1) 58%, rgba(36,0,4,1) 87%);
+		width: 700px;
+		height: 80px;
+		border: 1px black solid;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 7px;
+		margin-top: 3px;
+		margin-bottom: 5px;
+		display: flex;
+	}
+	.charts-rank{
+		background: ;
+		width: 90px;
+		height: 80px;
+	}
+	.charts-info{
+	
+		width: 370px;
+		height: 80px;
+	}
+	.charts-button{
+		
+		width: 130px;
+		height: 80px;
+	}
+	.charts-img{
+
+		width: 100px;
+		height: 80px;
+	
+		
+	}
+	.box-logo{
+		background: ;
+		width: 160px;
+		height: 48px;
+	}
+	.box-links{
+		background: ;
+		width: 480px;
+		height: 34px;
+		padding-top: 14PX;
+	}
+	.box-buttons{
+		background: ;
+		width: 100px;
+		height: 48px;
+	}
+	.btn{
+		margin-top: 14px;
+		background: orange;
+		width: 100px;
+		border-radius: 5PX;
+		transition: 0.2s;
+	}
+
+	.btn:hover{
+		color: white;
+		width: 120px;
+		background: black;
+	}
+	.btn1{
+		width:110px;
+		height:30px;
+		color:white;
+		background: green;
+		margin-top: 25px;
+		border-radius: 10px;
+
+	}
+	.btn1:hover{
+		color: orange;
+		width: 160px;
+		background: black;
+		height: 60px;
+		transition: 0.2s;
+	}
+	.btn2{
+		width:110px;
+		height:30px;
+		color:white;
+		background: blue;
+		margin-top: 25px;
+		border-radius: 10px;
+		transition: 0.2s ;
+
+	}
+	.btn2:hover{
+		color: orange;
+		width: 160px;
+		background: black;
+		height: 60px;
+		
+	}
+	.hrf{
+		margin-left: 15PX;
+	}
+	.hrf:hover{
+		width: 160px;
+		background: black;
+		height: 60px;
+		transition: 0.2s;
+		color: red;
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.png"style="width: 160px;height: 48px;">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a href=""class="hrf"style="color: white;">CHARTS</a>
+			<a href=""class="hrf" style="color: white;">NEWS</a>
+			<a href=""class="hrf" style="color: red;">VIDEO</a>
+			<a href=""class="hrf" style="color: yellow;">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button style="width:70PX;height:20PX;color:white;background: purple;border-radius: 5px;margin-top: 15px;margin-left: 10px;">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-conatiner">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="btn" style="background: orange;">THIS WEEK</button>
+		<button class="btn" style="background: red;">LAST WEEK</button>
+		<button class="btn" style="background: blue;">PEAK</button>
+		<button class="btn" style="background: purple;">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">1</div>
+			<div style="width: 100px;height: 20px;color: green;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">up</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">OMFG-hello</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">OMFG-music</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn2">воспроизвисти</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="ytu.png"style="width:100px ; height: 80px;">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">2</div>
+			<div style="width: 100px;height: 20px;color: orange;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">new</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">Polish cow</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">MeMe-song</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn1">купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="cow.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">3</div>
+			<div style="width: 100px;height: 20px;color: orange;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">new</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">Raining taco</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">Roblox-song</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn1">купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="taco.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">4</div>
+			<div style="width: 100px;height: 20px;color: green;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">up</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">Keyboard cat</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">MeMe-music</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn1">купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="cat.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">5</div>
+			<div style="width: 100px;height: 20px;color: darkred;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">down</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">Crawling Gnome</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">MeMe-music</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn1">купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="dfg.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">6</div>
+			<div style="width: 100px;height: 20px;color: orange;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">new</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">blox fruit</div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">Roblox-music</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn2">воспроизвисти</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="asd.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<div style="width:100px;height:20px;color: black;font-size: 50px;margin-left: 25px;">7</div>
+			<div style="width: 100px;height: 20px;color: green;font-size: 15px;margin-top: 30px;margin-left: 29px;font-weight: 900;">up</div>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<div style="width:350px;height:30px;;color: #112e5c;font-weight: 900;margin-top: 10px;">Break in </div>
+			<div style="width:350px;height:40px;color: white;font-weight: 900;">Roblox-music</div>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn2">воспроизвисти</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="zxc.png"style="width:100px ; height: 80px;">
+		</div>		
+	</div>
+</div>
+<!--  
+1.Savage Love (Laxed - Siren Beat)
+Jaws 685 x Jason Derulo x BTS
+
+2.Dynamite
+BTS
+
+3.WAP
+Cardi B featuring Megan Thee Stallion
+
+4.Mood
+24kGoldn featuring iann dior
+
+5.Laugh Now Cry Later
+Drake featuring Lil Durk
+
+6.Blinding Lights
+The Weekend
+
+7.Rockstar
+DaBaby Featuring Roddy Ricch
+-->
